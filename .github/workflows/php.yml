@@ -19,5 +19,5 @@ jobs:
       with:
         username: "panxl6"
         api_token: ${{ secrets.packagist_token }}
-        package_name: xl.pan/hello-php # No need to be explicit if you have checked out a composer.json
+        package_name: panxl6/hello-php # No need to be explicit if you have checked out a composer.json
         domain: "packagist.org" # This is by default, so no need to specify this.
