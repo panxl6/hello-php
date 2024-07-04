@@ -1,0 +1,23 @@
+name: PHP Composer
+
+on:
+  push:
+    tags:        
+      - '*'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Publish to Composer packages
+      id: composer-publish
+      uses: mnavarrocarter/packagist-update@v1.0
+      with:
+        username: "your-username"
+        api_token: ${{ secrets.packagist_token }}
+        package_name: vendor/name # No need to be explicit if you have checked out a composer.json
+        domain: "packagist.org" # This is by default, so no need to specify this.
