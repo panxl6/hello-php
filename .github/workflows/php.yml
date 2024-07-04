@@ -17,7 +17,7 @@ jobs:
       id: composer-publish
       uses: mnavarrocarter/packagist-update@v1.0.0
       with:
-        username: "your-username"
+        username: "panxl6"
         api_token: ${{ secrets.packagist_token }}
-        package_name: vendor/name # No need to be explicit if you have checked out a composer.json
+        package_name: xl.pan/hello-php # No need to be explicit if you have checked out a composer.json
         domain: "packagist.org" # This is by default, so no need to specify this.
