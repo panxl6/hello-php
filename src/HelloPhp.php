@@ -6,6 +6,6 @@ class HelloPhp
 {
     public function sayHello()
     {
-        echo 'Hello PHP!' . PHP_EOL;
+        echo 'Hello PHP v1!' . PHP_EOL;
     }
 }
